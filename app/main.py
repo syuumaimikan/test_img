@@ -63,7 +63,7 @@ def main():
         await interaction.response.send_message(embed=embed)
 
     token = os.environ.get('TOKEN')
-
+    server_thread()
     # Botを起動
     client.run(token)
 
