@@ -40,16 +40,17 @@ def main():
     async def on_ready():
         print(f"起動完了: {client.user} でログインしています")
         await tree.sync()  # スラッシュコマンドを同期
-        # 特定のチャンネルでメッセージを送信
+        # 特定のチャンネルでメッセージを送信"""
         channel_id = 1347843619570319400  # ここに送信したいチャンネルのIDを入力
         channel = client.get_channel(channel_id)
+        """
         embed = discord.Embed(title="消えてもらおうか", color=0x969696)
         embed.set_author(name="チェンバー", icon_url="https://raw.githubusercontent.com/syuumaimikan/test_img/refs/heads/main/chamber.png")
         embed.set_thumbnail(url="https://raw.githubusercontent.com/syuumaimikan/test_img/refs/heads/main/chamber.png")
         if channel:
             await channel.send(embed=embed)
         else:
-            print(f"エラー: チャンネルID {channel_id} が見つかりません")
+            print(f"エラー: チャンネルID {channel_id} が見つかりません")"""
                 # メッセージを送信する時刻を設定 (例: 15:30)
         target_time = datetime.strptime("20:00", "%H:%M").time()
         channel_id = 1347843619570319400  # ここに送信したいチャンネルのIDを入力
